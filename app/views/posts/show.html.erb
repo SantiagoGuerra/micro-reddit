@@ -1,7 +1,20 @@
-<%= form_with scope: :post, url: posts_path, local: true do |form| %>
+<h1>
+  <%=@post.title%>
+</h1>
+
+<p>
+  <%=@post.content%>
+</p>
+
+
+<section>
+  <h2>
+    Create a comment
+  </h2>
+  <%= form_with(model: [@post, @post.comments.build], local: true) do |form| %>
   <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %>
   </p>
 
   <p>
@@ -13,3 +26,18 @@
     <%= form.submit %>
   </p>
 <% end %>
+</section>
+
+
+<section>
+  <h2>
+    Comments
+  </h2>
+  <ul>
+    <%@post.comments.each do |comment|%>
+      <li>
+        <%=comment.content%> <strong><%=comment.author%></strong>
+      </li>
+    <% end%>
+  </ul>
+</section>
