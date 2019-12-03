@@ -1,0 +1,24 @@
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/puma-4.3.0/ext/puma_http11
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20191203-7660-1tpok5m.rb extconf.rb
+checking for whether -D_FORTIFY_SOURCE=2 is accepted as CFLAGS... yes
+checking for whether -fstack-protector is accepted as LDFLAGS... yes
+checking for -lssp... yes
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+creating Makefile
+
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/puma-4.3.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/puma-4.3.0/ext/puma_http11
+make "DESTDIR="
+generating puma_http11-x64-mingw32.def
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/puma-4.3.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20191203-7660-1jani44/puma
