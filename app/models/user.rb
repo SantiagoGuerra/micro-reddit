@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+    has_many :posts
     validates :name, :email, presence: true
     validates :name, length: { minimum: 2 }
     validates :name, uniqueness: {case_sensitive:true}

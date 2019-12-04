@@ -6,6 +6,10 @@
   <%=@post.content%>
 </p>
 
+<p>
+  By <%=@user.find(@post.user_id).username%>
+</p>
+
 
 <section>
   <h2>
