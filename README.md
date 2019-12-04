@@ -71,8 +71,6 @@ This project was built using these technologies.
 * Git
 * Builder
 * SQLite3
-  
-
 
 
 <!-- CONTACT -->
