@@ -35,9 +35,11 @@
   </h2>
   <ul>
     <%@post.comments.each do |comment|%>
-      <li>
-        <%=comment.content%> <strong><%=comment.author%></strong>
-      </li>
+    <% if comment!=nil %>
+    <div>
+        <%=comment.content%><strong><%=comment.author%></strong>
+    </div>
+    <% end %>
     <% end%>
   </ul>
 </section>
