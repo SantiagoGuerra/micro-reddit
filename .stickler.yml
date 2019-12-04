@@ -9,7 +9,8 @@ linters:
 # add the files here you want to be ignored by stylelint
 files:
   ignore:
-    - "vendor/*"
+    - "vendor/**/**"
+    - "node_modules/**/**"
     - "bin/*"
     - "db/*"
     - "config/*"
