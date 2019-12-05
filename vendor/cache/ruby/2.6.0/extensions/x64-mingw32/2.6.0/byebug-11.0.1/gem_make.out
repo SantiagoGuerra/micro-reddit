@@ -1,0 +1,20 @@
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20191203-7660-ri54cl.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+generating byebug-x64-mingw32.def
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: C:/Users/lhscar/Documents/Nueva carpeta/micro-reddit/vendor/cache/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20191203-7660-1a27dx0/byebug
