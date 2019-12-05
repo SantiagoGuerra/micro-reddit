@@ -2,6 +2,7 @@
 
 class User < ApplicationRecord
   has_many :posts
+  has_many :comments
   validates :name, :email, presence: true
   validates :name, length: { minimum: 2 }
   validates :name, uniqueness: { case_sensitive: true }
