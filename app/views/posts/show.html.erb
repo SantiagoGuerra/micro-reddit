@@ -6,16 +6,12 @@
   <%=@post.content%>
 </p>
 
-<!--<p>
-  By <%=@user.find(@post.user_id).username%>
-</p>-->
-
 
 <section>
   <h2>
     Create a comment
   </h2>
-  <%= form_with(model: [@post, @post.comments.build], local: true) do |form| %>
+  <%= form_with model: [ @user, @user.comments.build ], local: true do |form| %>
   <p>
     <%= form.label :author %><br>
     <%= form.text_field :author %>
@@ -24,6 +20,11 @@
   <p>
     <%= form.label :content %><br>
     <%= form.text_field :content %>
+  </p>
+
+  <p>
+    <%= form.label :user %><br>
+    <%= form.number_field :user_id %>
   </p>
 
   <p>
@@ -37,7 +38,7 @@
     Comments
   </h2>
   <ul>
-    <%@post.comments.each do |comment|%>
+    <%@user.comments.each do |comment|%>
     <% if comment!=nil %>
     <div>
         <%=comment.content%><strong><%=comment.author%></strong>

@@ -11,8 +11,10 @@ class PostsController < ApplicationController
   end
 
   def show
-    @user = User
     @post = Post.find(params[:id])
+    @user = User.find(@post.user_id)
+
+    @comments = @user.comments.all
   end
 
   def create
